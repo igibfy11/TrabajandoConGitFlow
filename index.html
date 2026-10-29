@@ -52,6 +52,22 @@
     <button onclick="multiplicar()">Multiplicar</button>
     <h3 id="resultadoMultiplicacion">Resultado:</h3>
 
+
+    <!-- División -->
+    <br><br>
+    <h2>Operación: División</h2>
+
+    <label for="numero7">Primer número:</label>
+    <input type="number" id="numero7">
+    <br><br>
+
+    <label for="numero8">Segundo número:</label>
+    <input type="number" id="numero8">
+    <br><br>
+
+    <button onclick="dividir()">Dividir</button>
+    <h3 id="resultadoDivision">Resultado:</h3>
+
     <script>
         // suma
         function sumar() {
@@ -77,6 +93,15 @@
             let resultado = numero5 * numero6;
 
             document.getElementById("resultadoMultiplicacion").textContent = "Resultado: " + resultado;
+        }
+
+        // división
+        function dividir() {
+            let numero7 = Number(document.getElementById("numero7").value);
+            let numero8 = Number(document.getElementById("numero8").value);
+            let resultado = numero7 / numero8;
+
+            document.getElementById("resultadoDivision").textContent = "Resultado: " + resultado;
         }
     </script>
     
