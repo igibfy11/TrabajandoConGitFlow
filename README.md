@@ -1,2 +1,2 @@
 # Mi Calculadora
-Versión 1.0.0 - Ahora con soporte para sumas
+Versión 2.0.0 - Calculadora con suma, resta, multiplicación y división.
