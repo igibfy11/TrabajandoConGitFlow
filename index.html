@@ -7,6 +7,7 @@
 </head>
 <body>
     <h1>Mi Calculadora</h1>
+    <!-- suma -->
     <h2>Operación: Suma</h2>
 
     <label for="numero1">Primer número:</label>
@@ -26,18 +27,30 @@
 
     <label for="numero3">Primer número:</label>
     <input type="number" id="numero3">
-
     <br><br>
 
     <label for="numero4">Segundo número:</label>
     <input type="number" id="numero4">
-
     <br><br>
 
     <button onclick="restar()">Restar</button>
-
     <h3 id="resultadoResta">Resultado:</h3>
 
+
+    <!-- Multiplicación -->
+    <br><br>
+    <h2>Operación: Multiplicación</h2>
+
+    <label for="numero5">Primer número:</label>
+    <input type="number" id="numero5">
+    <br><br>
+
+    <label for="numero6">Segundo número:</label>
+    <input type="number" id="numero6">
+    <br><br>
+
+    <button onclick="multiplicar()">Multiplicar</button>
+    <h3 id="resultadoMultiplicacion">Resultado:</h3>
 
     <script>
         // suma
@@ -55,6 +68,15 @@
             let resultado = numero3 - numero4;
 
             document.getElementById("resultadoResta").textContent = "Resultado: " + resultado;
+        }
+
+        // multiplicación
+        function multiplicar() {
+            let numero5 = Number(document.getElementById("numero5").value);
+            let numero6 = Number(document.getElementById("numero6").value);
+            let resultado = numero5 * numero6;
+
+            document.getElementById("resultadoMultiplicacion").textContent = "Resultado: " + resultado;
         }
     </script>
     
